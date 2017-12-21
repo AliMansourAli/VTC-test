@@ -158,7 +158,7 @@ $(window).load(function () {
         jQuery('#myContentArea').load('video.html',
             function () {
                 document.getElementById("videoDiv").innerHTML = "";
-                document.getElementById("videoDiv").innerHTML = '<video id="vid" poster="videos/' + String(sectionArray[2][currentScreen][0]) + '.jpg?v1" controls width="100%"><source src="videos/VTC-Cond-M01L03T01T01P01.mp4" type="video/mp4"></video>';
+                document.getElementById("videoDiv").innerHTML = '<video id="vid" poster="videos/' + String(sectionArray[2][currentScreen][0]) + '.jpg?v1" controls width="100%"><source src= "videos/VTC-Cond-M01L03T01T01P01.mp4" type= "video/mp4" ><source src= "videos/VTC-Cond-M01L03T01T01P01.webm" type= "video/webm" ><source src= "videos/VTC-Cond-M01L03T01T01P01.ogv" type= "video/ogg" > </video > ';
                 
                 $('#media-controls').css("visibility", "visible");
                 initialiseMediaPlayer();
