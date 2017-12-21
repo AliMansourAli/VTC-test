@@ -1,0 +1,147 @@
+﻿<!doctype html>
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VTC</title>
+    
+    
+
+    <!-- Bootstrap -->
+
+    <link href="../Theme/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../Theme/js/jquery-1.12.0.js"></script>
+    <script src="../Theme/js/jquery-ui.js"></script>
+
+    <script src="../Theme/bootstrap/js/bootstrap.min.js"></script>
+
+    
+
+    <script src="js/manageCourseJS.js"></script>
+    <!--<script src="js/manageLOJS.js"></script>-->
+
+
+    <link href="css/custom.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+
+    <link href='css/media-player.css' rel='stylesheet' />
+    <script src='js/media-player.js'></script>
+
+</head>
+
+<body ng-app="Demo">
+
+    <div class="page-wrapper">
+        <div class="container">
+            <header>
+                <div class="headerArea col-sm-11 col-sm-offset-1  col-xs-12 col-xs-offset-0">
+                    <img class="logo" src="images/logo.png" />
+                    <img class="coollingLogo" src="images/coolling-logo.png" />
+                    <div class="courseTitle">
+                        <span>شحن وسيط التبريد</span>
+                        <p>لأجهزة التكييف والتبريد المنزلية</p>
+                    </div>
+                </div>
+
+
+            </header>
+
+            <div class="navigationButtons col-xs-12  col-sm-10 col-sm-offset-1">
+                <nav class="navButtons navbar navbar-inverse">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+                            <button id="smallMenuBtn" type="button" class="collapseIcon navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav ">
+                                <li class="col-sm-3"><button id="objBtn" class="navButton"><img class="normalImage" src="images/obj-icon.png" /><span>الأهداف</span></button></li>
+                                <li class="col-sm-3"><button id="topicBtn" class="navButton" onClick="toggleLessonsMenu();"><img class="normalImage" src="images/less-icon.png" /><span>الدروس</span></button></li>
+                                <li class="col-sm-3"><button id="sumBtn"  class="navButton"><img class="normalImage" src="images/sum-icon.png" /><span>الملخص</span></button></li>
+                                <li class="col-sm-3"><button id="quesBtn"  class="navButton"><img class="normalImage" src="images/ques-icon.png" /><span>الأسئلة</span></button></li>
+
+                            </ul>
+
+                        </div>
+                    </div>
+                </nav>
+            </div>
+
+            <div id="myContin" class="content col-sm-11">
+                <div id="lessonsMenu" class="lessons col-xs-12">
+                    <ul id="lessonsMenuUl" class="col-xs-12">
+                        <li class="col-lg-4 col-md-6 col-sm-12"><button onclick="eee()">تفريغ دارات التبريد من الوسيط</button></li>
+                        <li class="col-lg-4 col-md-6 col-sm-12"><button>شحن دارات التبريد بالوسيط</button></li>
+                        <li class="col-lg-4 col-md-6 col-sm-12"><button>محطة التفريغ والشحن</button></li>
+                    </ul>
+                </div>
+                <div id="path" class="path">
+                    
+                    <span id="topic-path">تفريغ دارات التبريد من الوسيط</span>
+                    <span class="glyphicon glyphicon-circle-arrow-left"></span>
+                </div>
+
+                <div class="pagesNavigation">
+                    <div id="prevTopic" class="pagesNavigationIcon" data-toggle="tooltip" title="الدرس السابق"><img src="images/prevTopic.png" /></div>
+                    <div id="prevPage" class="pagesNavigationIcon" data-toggle="tooltip" title="الصفحة السابقة"><img src="images/prevPage.png" /></div>
+                    <div class="pagesNavigationCounter"><span id="pageCount">1</span><span> من </span><span is id="pagesNumber">5</span></div>
+                    <div id="nextPage" class="pagesNavigationIcon" data-toggle="tooltip" title="الصفحة التالية"><img src="images/nextPage.png" /></div>
+                    <div id="nextTopic" class="pagesNavigationIcon" data-toggle="tooltip" title="الدرس التالى"><img src="images/nextTopic.png" /></div>
+                </div>
+
+                <div class="line"></div>
+                <div id="pageTitle" class="pageTitle">
+                    عنوان الصفحة
+                </div>
+                <div id="myContentArea" class="contentArea col-xs-12">
+                </div>
+                <div id='media-controls' class="mediaControls col-xs-12">
+                    <div class="mediaControlsLeft">
+                        
+                        <button id='play-pause-button' class='play' title='play' onclick='togglePlayPause();'>Play</button>
+                        <button id='stop-button' class='stop' title='stop' onclick='stopPlayer();'>Stop</button>
+                        <button id='replay-button' class='replay' title='replay' onclick='replayMedia();'>Replay</button>
+                    </div>
+                    <div id="mediaControlsBar" class="mediaControlsBar">
+                        <input type="range" id="videoSeekbar" value="0" max="100" step="1"></input>
+                        <progress id='progress-bar' min='0' max='100' value='0'>0% played</progress>
+                    </div>
+                    <div class="mediaControlsRight">
+                        <button id='mute-button' class='mute' title='mute' onclick='toggleMute("true");'>Mute</button>
+                        <div>
+                            <input type="range" id="volumeSeekbar" value="100" max="100" step="1"></input>
+                            <progress id='volume-bar' min='0' max='100' value='100'></progress>
+                        </div>
+                        <button id='fullscreen-button' class='fullscreen' title='fullscreen' onclick='fullscreen();'><i class="material-icons" style="font-size:16px">fullscreen</i>
+                    </div>
+                </div>
+
+            <div id="footerContent" class="col-xs-12">
+                <p id="copyrights" class="copyrights">جميع الحقوق محفوظة © لمؤسسة التدريب المهنى بالأردن</p>
+            </div>
+
+            <div class="clearfix">
+            </div>
+
+        </div>
+
+
+
+    </div>
+
+</body>
+</html>
