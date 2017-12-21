@@ -1,0 +1,720 @@
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+
+html, body {
+    	height: 100%;
+    	margin: 0px;
+}
+
+.page-wrapper{
+	height: 100%;
+}
+
+body{
+	transition:all 0.3s ease-out;
+	background: #bdb5b5; /* For browsers that do not support gradients */
+	 /* For Safari 5.1 to 6.0 */
+	 /* For Opera 11.1 to 12.0 */
+	 /* For Firefox 3.6 to 15 */
+	 /* Standard syntax */
+	background-size: 100% 100%;
+	font-family:"Droid Arabic Kufi","Verdana","Simplified Arabic";;
+}
+.container{
+	padding:0px;
+	margin-top:0px;
+	position: relative;
+	overflow:hidden;
+	background: #ce0000; /* For browsers that do not support gradients */
+	/* z-index: -10; */
+	/* height: 100%; */
+}
+
+
+header{
+	
+}
+
+.headerArea{
+	background: #ffffff;
+	border-radius: 0px 0px 0px 40px;
+	box-shadow: -5px 5px 35px black;
+	height: 160px;
+	top: 0px;
+	bottom: 0px;
+	overflow: hidden;
+}
+
+.logo{
+	
+float: right;
+	
+margin: 22px 40px;
+}
+
+.coollingLogo{
+		
+float: left;
+		
+margin: -12px -28px;
+		
+width: 242px;
+}
+
+
+.courseTitle{
+	
+text-align: center;
+	
+font-size: 18pt;
+	
+font-weight:  bold;
+	
+line-height: 47px;
+	
+padding-top: 34px;
+}
+
+
+
+.navigationButtons{
+	/* height: 74px; */
+	z-index: 2;
+	/* align-items: baseline; */
+	/* align-content: center; */
+	/* padding-top:  5px; */
+}
+
+.content{
+	
+background: #ffffff;
+	
+border-radius: 0px 40px 0px 0px;
+	
+box-shadow: 5px 5px 35px black;
+	
+min-height: 200px;
+	
+/* width: 100%; */
+	
+/* position: absolute; */
+	
+display: inline-block;
+	
+padding-top: 20px;
+	
+z-index: 0;
+}
+
+
+
+
+
+#footerContent{
+	min-height: 40px;
+	display: inline;
+	background: black;
+}
+
+
+.copyrights{
+	text-align: center;
+	padding: 1%;
+	font-size: 14px;
+	color: #ffffff;
+	margin: 0px;
+	font-family: "beINNormal","Arial","Simplified Arabic";
+}
+
+
+
+
+
+
+
+
+
+.navButtons{
+	background-color: rgba(255,255,255,0);
+	border:none;
+	margin-bottom: 1px;
+}
+
+
+.buttons{
+	padding:0px;
+	
+	margin-top:0px;
+}
+
+.navButton {
+	background: rgba(0,0,0,0);
+	transition:all 0.4s;
+	color: #ffffff;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	cursor: pointer;
+	px; */
+	overflow: visible;
+	/* width: 100%; */
+	border: none;
+	height: 70px;
+}
+
+.navButton span{
+	font-family:"Droid Arabic Kufi","Verdana","Simplified Arabic";
+	font-size: 25px;
+	font-weight:normal;
+	margin: 15px 20px;
+	line-height: 59px;
+}
+
+.navButton img{
+	margin:auto;
+	float: right;
+}
+
+
+.nav{
+	width:100%;
+	padding:0px;
+	direction: rtl;
+}
+
+.nav li{
+	/* width:25%; */
+	padding: 5px 2px 0px;
+	float: right;
+}
+
+
+
+.navButton:before {
+	content:"  ";
+	position:absolute;
+	top: 77px;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 0px 12px 11px 12px;
+	border-color: transparent transparent #ffffff transparent;
+	opacity: 0;
+	left: 35%;
+	z-index: 4;
+	transition: all 0.3s;
+}
+
+
+
+
+
+
+
+.navButton:hover::before,  .navButton.selected::before{
+	opacity: 1;
+	top: 65px;
+}
+
+
+
+.navButton:hover img, .navButton.selected img{
+	//
+	/*-ms-transform: rotate(7deg); /* IE 9 */
+	/* -webkit-transform: rotate(7deg); */ /* Chrome, Safari, Opera */
+	/* transform: rotate(7deg); */
+}
+
+
+.navButton:hover span, .navButton.selected span{
+	text-shadow: 2px 2px #000000;
+}
+
+
+.line{
+	/* width: 100%; */
+	height: 45px;
+	border-bottom: 1px solid #6a6a6a;
+	/* position: absolute; */
+	margin-top: -35px;
+	margin-left: 80px;
+	margin-right: 17px;
+}
+
+.path{
+	float: right;
+	padding-right: 17px;
+	padding-top: 8px;
+	font-size: 14pt;
+	font-weight:  bold;
+}
+
+.pagesNavigation{
+	direction: rtl;
+	display: inline-flex;
+	color: #6a6a6a;
+	margin-left: 80px;
+	padding-top: 8px;
+}
+
+.pagesNavigationIcon{
+	padding: 0px 3px;
+	cursor: pointer;
+}
+
+.pagesNavigationIcon img{
+	width: 35px;
+}
+
+.pagesNavigationCounter{
+	
+	padding: 3px 5px;
+		
+	font-size: 15pt;
+}
+
+
+
+.mediaControlsLeft{
+	
+text-align: right;
+	
+padding-left: 0px;
+	
+display: inline-flex;
+}
+
+.mediaControlsBar{
+	
+padding: 0px 5px;
+	
+width: 100%;
+}
+
+.mediaControlsRight{
+	
+	display: inline-flex;
+}
+
+.lessons{
+	color:  #fc0000;
+	padding-right: 29px;
+	direction: rtl;
+	font-size: 14pt;
+	transition: all 0.5s ease-out;
+	font-weight:  bold;
+	opacity: 0;
+	height: 0px;
+	visibility: hidden;
+	/* margin-top:  20px; */
+}
+
+#lessonsMenuUl{
+
+/* margin-top:  20pt; */
+}
+
+.lessons ul li{
+	padding: 0px;
+	float: right;
+}
+
+.lessons ul li button{
+	border:  none;
+	background:  none;
+	/* color: #fff; */
+	/* font-size: 12pt; */
+	/* border-bottom: 1px solid #fff; */
+	/* padding: 5px; */
+}
+
+.lessons ul li button:hover{
+	text-decoration:underline;
+}
+
+
+
+.navbar-toggle{
+	
+}
+
+.specialFunctions{padding-left: 0px;margin-top: 100px;}
+
+.specialButton{
+	
+background: none;
+	
+border:  none;
+	
+margin-bottom:  5px;
+	
+padding-left:  0px;
+}
+
+
+.pageTitle {
+    padding: 5px 17px;
+    color: #ce0000;
+    font-size: 17pt;
+    float: right;
+    font-weight:  bold;
+}
+
+
+@media (min-width: 1200px){
+
+	/* only Large Devices */
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+	/* only Medium Devices */
+	.courseTitle{
+				
+text-align: center;
+				
+font-size: 18pt;
+				
+font-weight: bold;
+				
+line-height: 33pt;
+	}
+	
+	.navigationButtons {
+		height: 72px;
+	}
+	
+	.navButton span{
+		font-size: 23px;
+		line-height: 54px;
+		margin: 8px;
+	}
+	
+	.navButton img{
+		width: 50px;
+	}
+	
+	.navButton:hover::before, .navButton.selected::before {
+		top: 61px;
+	}
+	
+	.path{
+		font-size: 12pt;
+	}
+	
+	.pagesNavigationIcon{
+		padding: 0px 2px;
+	}
+	
+	.pagesNavigationIcon img{
+		width: 31px;
+	}
+	
+	.pagesNavigationCounter{
+		font-size: 13pt;		
+		padding-top: 4px;
+	}
+	
+	.nav li{		
+		padding: 3px 2px 0px;
+	}
+	
+	.coollingLogo{
+	}
+	
+	
+	.specialFunctions{
+		
+	}
+	
+	.specialButton{
+		
+	}
+
+    .pageTitle {
+        font-size: 16pt;
+    }
+	
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+	/* only Small Devices */
+	.courseTitle{
+							
+font-size: 16pt;
+							
+font-weight: bold;
+							
+line-height: 30pt;
+							
+position:  absolute;
+							
+padding-left: 9%;
+	}
+	
+	.navigationButtons {
+		height: 65px;
+	}
+		
+
+	.navButton span{
+
+		font-size: 18px;
+		
+		margin: 5px;
+		
+		line-height: 44px;
+		
+	}
+	
+	.navButton img{
+		width: 40px;
+	}
+	
+	.navButton:hover::before,.navButton.selected::before {
+		top: 56px;
+	}
+	
+	.path{
+		
+font-size: 10pt;
+	}
+
+	.pagesNavigationIcon{
+		padding: 0px 0.5px;
+	}
+	
+	.pagesNavigationIcon img{
+		width: 27px;
+	}
+	
+	.pagesNavigationCounter{
+		font-size: 13pt;
+		padding: 2px 3px;
+	}
+	
+	.contentArea{
+		/* padding: 5px 0px; */
+	}
+	
+	.nav li{
+		
+		padding: 0px 2px 0px;
+	}
+	
+	.coollingLogo{
+	}
+	
+	.specialFunctions{
+		
+	}
+	
+	.specialButton{
+		
+	}
+
+    .pageTitle {
+        font-size: 14pt;
+    }
+
+	
+}
+@media (max-width: 768px) {
+	/* only Extra Small */
+	
+	.headerArea {
+		/* border-radius: 0px; */
+		margin-left: 78px;
+		height:  100px;
+	} 
+		
+	.courseTitle{
+					
+font-size: 13pt;
+					
+line-height: 25pt;
+					
+padding-top: 16px;
+					
+padding-left: 15%;
+					
+position:  absolute;
+			}
+	
+	
+	.content{
+	
+		width: 91%;
+			
+		display: inline-block;
+			
+		height:  100%;
+	}
+	
+	.logo{
+		width: 130px;
+		margin: 11px 5px;
+		margin-right:  78px;
+	}
+	.navbar-header{
+		position: absolute;
+		top: -97px;
+	}
+	
+	.navbar-collapse{
+		top: -50px;
+		position: absolute;
+		border: none;
+		margin: 0px;
+		padding: 0px;
+		/* left: 84px; */
+		width: 115px;
+	}
+	
+	.nav{
+		padding: 0px;
+		margin: 0px;
+		font-size: 24pt;
+	}
+	
+	.nav li{
+		float: left;
+		padding: 0px;
+		width: 100%;
+	}
+	
+	.navButton{
+		background: #473e44;
+		padding: 0px;
+		width: 100%;
+		border-bottom: 1px solid #fff;
+	}
+	
+	
+	.navButton img, .navButton:before{
+		display:none;	
+	}
+	
+	.navigationButtons{
+		height: 45px;
+	}
+	
+	.navButtons{
+		min-height: 15px;
+	}
+	
+	.path{
+		font-size: 9pt;
+	}
+
+	.pagesNavigationIcon{
+	}
+	
+	.pagesNavigationIcon img{
+		width: 22px;
+	}
+	
+	.pagesNavigationCounter{
+		font-size: 11pt;
+		padding: 0px 3px;
+	}
+	
+	.navButton span{
+		font-size:  20px;
+	}
+	
+	.lessons{
+		position:  absolute;
+		top: -44px;
+		z-index:  1;
+		left: 122px;
+		direction:  inherit;
+		width: 170px;
+	}
+	
+	
+	.lessons ul{
+		list-style-type: none;
+		display:  grid;
+	}
+	
+	.lessons ul li{	
+		float:  left;
+		background-color: #473e44;
+		width: 150px;
+	}
+	
+	.lessons ul li button{	
+		color: #fff;
+		font-size: 12pt;
+		border-bottom: 1px solid #fff;
+		padding: 5px;
+	}
+	
+	
+	.lessons:before {
+		
+		content:"  ";
+				
+		position:absolute;
+				
+		top: 19px;
+				
+		width: 0;
+				
+		height: 0;
+				
+		border-style: solid;
+				
+		border-width: 15px 0px 15px 12px;
+				
+		border-color: transparent #da131300 transparent #473e44;
+				
+		/* opacity: 0; */
+				
+		left: 8px;
+				
+		z-index: 33;
+				
+		transition: all 0.3s;
+	}
+	
+	.coollingLogo{
+	}
+	
+	.specialFunctions{
+		
+	}
+	
+	.specialButton{
+		
+	}
+
+    .pageTitle {
+        font-size: 13pt;
+    }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 480px){
+	.courseTitle{
+		font-size: 11pt;
+		padding-left: 10%;
+		line-height: 20pt;
+		padding-top: 25px;
+	}
+}
+
+@media only screen and (max-width: 480px) and (min-width: 320px){
+	.courseTitle{
+		line-height: 22pt;
+		padding-left: 15%;
+		font-size: 13px;
+	}
+	
+	.logo {
+		display:none;
+	}
+	
+	.path{
+			
+font-size: 7pt;
+	}
+}

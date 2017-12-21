@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<course>
+  <lo name="شحن وسيط التبريد لأجهزة التكييف و التبريد المنزلية">
+    <obj name="الأهداف">
+      <page name="VTC-Cond-M01L03Obj" video="true">الأهداف</page>
+    </obj>
+    <topic name="تفريغ دارات التبريد من الوسيط">
+      <page name="VTC-Cond-M01L03T01P01" video="true">تفريغ دارات التبريد من الوسيط</page>
+      <page name="VTC-Cond-M01L03T01P02" video="true">عملية تفريغ دارة التبريد</page>
+      <page name="VTC-Cond-M01L03T01P03" video="true">محطة التفريغ والشحن</page>
+      <page name="VTC-Cond-M01L03T01P04" video="true">مكونات محطة التفريغ والشحن</page>
+    </topic>
+
+    <topic name="شحن دارات التبريد بالوسيط">
+      <page name="VTC-Cond-M01L03T02P01" video="true">كمية الشحنة</page>
+      <page name="VTC-Cond-M01L03T02P02" video="true">وسائل ضبط كمية الشحنة</page>
+      <page name="VTC-Cond-M01L03T02P03" video="true">عملية شحن دراة التبريد</page>
+      <page name="VTC-Cond-M01L03T02P04" video="true">عملية شحن دراة التبريد</page>
+      <page name="VTC-Cond-M01L03T02P05" video="true">عملية شحن دراة التبريد</page>
+
+    </topic>
+    <topic name="أنشطة">
+      <page name="VTC-Cond-M01L03Act1">نشاط 1 : تفريغ نظام تبريد يحتوي على خزان سائل</page>
+      <page name="VTC-Cond-M01L03Act2">نشاط 2 : شحن نظام تبريد يحتوي على خزان سائل</page>
+    </topic>
+    <sum name="الملخص">
+      <page name="VTC-Cond-M01L03Sum" video="true">الملخص</page>
+    </sum>
+    <ques name="الأسئلة">
+      <page name="VTC-Cond-M01L03Ques">الأسئلة</page>
+    </ques>
+  </lo>
+</course>
