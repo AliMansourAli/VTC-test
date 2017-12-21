@@ -1,0 +1,73 @@
+/* CSS Document */
+html{
+	height:100%;
+}
+body{
+	transition:all 0.2s;
+	background: url(../images/header_bg.jpg) no-repeat;
+	background-size: 100% 100%;
+	height: inherit;
+}
+header{text-align: center;}
+.logo{
+}
+.logo img{
+	
+height: 71px;
+	
+margin: 30px auto;
+}
+
+.copyrights{
+	font-size: 0.9em;
+	color:#999;
+}
+h3.panel-title{
+	font-size: 1.8em;
+}
+.panel{display: inline-block;margin: auto;float: none;background: transparent;color: #fff;}
+.panel-heading{
+}
+.panel-body{
+}
+.topics{
+	text-align:center;
+}
+.topics-names{
+	list-style: none;padding: 0 10px;
+}
+.topics-names li{
+		/* border-bottom: 1px dotted #fff; */
+		position:relative;
+		text-align: left;
+		background: rgba(0,0,0,0.2);
+		margin: 2px;
+}
+.topics-names li a{
+	color: #ccc;
+	font-size: 1.4em;
+	z-index: 5;
+	position: relative;
+	display: block;
+	padding: 5px 10px;
+}
+.topics-names li a:hover{
+	text-decoration:none;
+	color:#fff;
+}
+.topics-names li:before{
+		content:" ";
+		display:block;
+		position:absolute;
+		top:0px;
+		bottom:0px;
+		left:0px;
+		right:100%;
+		background:#ff9900;
+		z-index: 2;
+		transition: all 0.3s ease-out;
+}
+.topics-names li:hover:before{
+		right:0px;
+}
+

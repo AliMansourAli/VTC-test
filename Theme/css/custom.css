@@ -1,0 +1,256 @@
+/* CSS Document */
+body{
+	transition:all 0.2s;
+}
+header{
+	background:url(../images/header_bg.jpg);
+	/* border-top: 5px solid #fff; */
+	background-size: 100% 100%;
+	margin-bottom: 30px;
+	box-shadow: 0px 3px 22px -6px;
+}
+.logo{
+}
+.logo img{
+	
+height: 71px;
+}
+/************************* Navbar **********************************/
+/*******************************************************************/
+
+.navbar{
+	
+float: right;
+	
+color: #fff;
+	
+margin-bottom: 0px;
+	
+margin: 0px;
+	
+padding: 0px;
+}
+.navbar-nav>li{
+	
+margin: 0 1px;
+}
+.navbar-nav>li>a{
+
+color: #fff;
+
+border-top: 3px solid #ff9900;
+
+padding-top: 39px;
+}
+@keyframes nav_hover_background {
+	from  {left:0px; top:0px;}
+    to  {}
+	
+}
+.navbar-nav>li>a{
+	z-index:2;
+}
+.navbar-nav>li>a:hover{
+	background:transparent;
+}
+.animated-hover-background:before{
+	content:" ";
+	background-color:#ff9900;
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:100%;
+	display:block;
+	z-index: -1;
+	transition:all 0.2s ease-out;
+}
+.animated-hover-background:hover:before{
+	left:0px; top:0px; bottom:0px;
+	
+}
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover{
+	background:transparent;
+	border-color: #fff;
+}
+.nav .open>a:before, .nav .open>a:focus:before, .nav .open>a:hover:before{
+		left:0px; top:0px; bottom:0px;
+
+}
+.page{
+	
+	/* border:1px solid #ff9900; */
+}
+/************************* Page Contents **********************************/
+/*******************************************************************/
+
+
+.page{
+	position:relative;
+	background: #fff;
+	box-shadow: 0px 0px 14px -5px;
+	/* min-height: 500px; */
+	border-radius:10px;
+	z-index: 5;
+	overflow: hidden;
+}
+.page-banner{
+    background: url(../images/title_bg.jpg);
+    background-size: 100% 100%;
+    box-shadow: 0px -13px 24px -19px inset;
+    padding-top: 10px;
+}
+.page-banner h2{margin-top: 0px;text-shadow: 3px 3px 2px #ccc;display: inline-block;}
+.breadcrumb{/* float: left; */padding: 0px;margin: 0px;background: transparent;}
+.page-navigation{
+	position:relative;
+	margin-bottom: -9px;
+	overflow: auto;
+}
+.page-navigation nav{float: right;background: #FF9900;padding: 10px 10px 18px;border-radius: 10px;/* position: absolute; *//* right: 10px; *//* top: -35px; */z-index: -1;}
+.page-navigation nav:hover{
+	background: #f4af47;
+}
+.page-navigation span{
+}
+.page-navigation .btn{}
+.page-footer{
+	/* bottom:0px; */
+	background: #f5f5f5;
+	/* right: 0px; */
+	/* left: 0px; */
+	padding: 5px;
+	/* position: absolute; */
+	box-shadow: 0px 12px 24px -19px inset;
+}
+.extra-options{
+	float: right;
+	display: inline-block;
+	width: 40px;
+	height: 34px;
+	overflow: hidden;
+	transition: all 0.7s ease-out;
+	-moz-transition: all 0.7s ease-out;/* Firefox 4 */
+	-webkit-transition: all 0.7s ease-out;/* Safari and Chrome */
+	-o-transition: all 0.7s ease-out;/* Opera */
+	-ms-transition: all 0.7s ease-out;/* Explorer 10 */
+	text-align: right;
+	white-space: nowrap;
+}
+.extra-options .expand{
+
+border: 0px;
+
+background: transparent;
+}
+.extra-options:hover{width: auto;width: 300px;}
+.extra-options:hover .expand{
+
+display: none;
+}
+
+.extra-options .btn{
+}
+.lesson-names{
+	display: inline-block;
+	/* vertical-align: top; */
+}
+.lesson-names button{
+	border: 0px;
+	background: rgba(0,0,0,0.5);
+	font-size: 1em;
+	line-height: 0px;
+	border-radius: 50%;
+	height: 26px;
+	width: 26px;
+	color: #fff;
+	/* box-shadow: 0px 0px 14px -6px #000; */
+	/* border: 1px solid #fff; */
+	margin-left: 10px;
+}
+.dropdown-menu{
+	background:#fff6e8;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover{
+	background:#ff9900;
+	color:#fff;
+}
+.copyrights{
+	font-size: 0.9em;
+	color:#999;
+}
+.objectives-img{
+	position:absolute;
+	z-index:0;
+	/* left: -15px; */
+	right: -15px;
+	bottom: 0px;
+	top: -20px;
+	height: 100%;
+}
+.content{
+	position:relative;
+}
+.page-content{
+	position:relative;
+	min-height: 400px;
+}
+.objecives{
+	list-style: none;
+	padding: 0 10px;
+	display: inline-block;
+}
+.objecives li{
+		border-bottom: 1px dotted #ccc;
+		position:relative;
+		margin: 2px;
+}
+.objecives li a{
+	/* color: #ccc; */
+	/* font-size: 1.4em; */
+	z-index: 5;
+	position: relative;
+	display: block;
+	padding: 2px 7px;
+}
+.objecives li a:hover{
+	text-decoration:none;
+	color: #000;
+}
+.objecives li:before{
+		content:" ";
+		display:block;
+		position:absolute;
+		top:0px;
+		bottom:0px;
+		left:0px;
+		right:100%;
+		background: rgba(211,160,75,0.2);
+		z-index: 2;
+		transition: all 0.3s ease-out;
+}
+.objecives li:hover:before{
+		right:0px;
+}
+@media (min-width: 1200px){
+	/* only Large Devices */
+}
+@media (max-width: 1200px) and (min-width: 992px) {
+	/* only Medium Devices */
+}
+@media (max-width: 992px) {
+	/* Small Devices and smaller */
+}
+@media (max-width: 992px) and (min-width: 768px) {
+	/* only Small Devices */
+}
+@media (max-width: 768px) {
+	/* only Extra Small */
+	.objecives li{
+		 background: rgba(255,255,255,0.80);
+		 border: 0px;
+	}
+}
+@media (min-width: 769px) {
+	/* All except Xtra Small Devices */
+}
